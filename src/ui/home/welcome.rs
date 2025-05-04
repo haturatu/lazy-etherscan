@@ -10,7 +10,7 @@ pub fn render<B: Backend>(f: &mut Frame<B>, app: &App, rect: Rect) {
 
     let [logo_rect, details_rect] = *Layout::default()
         .direction(Direction::Vertical)
-        .constraints([Constraint::Ratio(1, 3), Constraint::Ratio(2, 3)].as_ref())
+        .constraints([Constraint::Ratio(1, 2), Constraint::Ratio(1, 2)].as_ref())
         .margin(1)
         .split(rect)
     else {
